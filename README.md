@@ -14,4 +14,5 @@
 
 ![Expanding cards expanded](./preview/avengers_expanding_cards_expanded.png)
 
+#### Description: 
 Simple design, expanding cards with Avengers photos and straightforward JavaScript for animation effects for panels and header.

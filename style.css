@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Marvel:wght@700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+#captain-america {
+    background-image: url('https://www.herocollector.com/uploads/media/Avengers_Infinity_War_poster_Cap.jpg');
+}
+
+#iron-man {
+    background-image: url('https://www.herocollector.com/uploads/media/Avengers_Infinity_War_poster_Iron_Man.jpg');
+}
+
+#thor {
+    background-image: url('https://www.herocollector.com/uploads/media/Avengers_Infinity_War_poster_Thor.jpg');
+}
+
+#hulk {
+    background-image: url('https://www.herocollector.com/uploads/media/Avengers_Infinity_War_poster_Hulk.jpg');
+}
+
+#black-widow {
+    background-image: url('https://www.herocollector.com/uploads/media/Avengers_Infinity_War_poster_Black_Widow.jpg');
+}
+
+#hawkeye {
+    background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/984a879b-e517-4213-88d0-dcc871727da7/dc7xf1n-3d4f8c47-b922-418d-ae13-ae9adee9e60f.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzk4NGE4NzliLWU1MTctNDIxMy04OGQwLWRjYzg3MTcyN2RhN1wvZGM3eGYxbi0zZDRmOGM0Ny1iOTIyLTQxOGQtYWUxMy1hZTlhZGVlOWU2MGYuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.FXZ6nCGh9rGQdN3HpEYagLyt2VL3EsGcah7IzqgAcwI');
+}
+
+body {
+    background: rgb(0,0,0);
+    background: linear-gradient(rgba(0,0,0,1) 20%, rgba(149,0,255,0.6671043417366946) 100%);
+    font-family: 'Marvel', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+
+.main-container {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.panels-heading {
+    height: 10vh;
+}
+
+#hero-header {
+    color: #fff;
+    text-align: center;
+    font-size: 10vh;
+    opacity: 0;
+    transition: opacity 0.7s ease-in-out;
+}
+
+.panels-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    width: 100vw;
+}
+
+.panel {
+    background-size: auto 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 60vh;
+    border-radius: 25px;
+    color: #fff;
+    cursor: pointer;
+    flex: 0.1;
+    margin: 10px;
+    position: relative;
+    transition: flex 0.7s ease-in;
+}
+
+.panel h3 
+{
+    font-size: 30px;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    margin: 0;
+    opacity: 0;
+}
+
+.panel.active {
+    flex: 0.5;
+}
+
+.panel.active h3 {
+    opacity: 1;
+    transition: opacity 0.3s ease-in 0.4s;
+}
+
+@media(max-width: 480px)
+{
+    .container
+    {
+        width: 100vw;
+    }
+
+    .panel:nth-of-type(5),.panel:nth-of-type(6) {
+        display: none;
+    }
+
+    #hero-header {
+        font-size: 5vh;
+    }
+}

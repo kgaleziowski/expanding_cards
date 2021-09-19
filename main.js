@@ -25,7 +25,8 @@ panels.forEach(panel => {
         }
 
         if(heroHeader.textContent == dataHero) {
-            heroHeader.style.opacity = 0;
+
+            heroHeader.style.opacity == 0 ? heroHeader.style.opacity = 1 : heroHeader.style.opacity = 0;
             return;
         }
 
